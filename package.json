@@ -1,0 +1,15 @@
+{
+  "name": "newsletter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.5",
+    "google-spreadsheet": "^3.0.14",
+    "googleapis": "^66.0.0",
+    "uuid-random": "^1.3.2"
+  }
+}
