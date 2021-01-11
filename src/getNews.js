@@ -39,7 +39,7 @@ function cleanText(email) {
 }
 
 function buildJson(news) {
-    return news.filter((newsItem) => newsItem != null).map(newsItem => {
+    return news.map(newsItem => {
         if (newsItem[1] != '') {
             return {
                 "uid": uuid(),
@@ -49,7 +49,7 @@ function buildJson(news) {
                 "redirectionUrl": 'https://filipedeschamps.com.br/newsletter'
             }
         }
-    });
+    }).filter((newsItem) => newsItem != null);
 }
 
 module.exports = getNews();
