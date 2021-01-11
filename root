@@ -1,6 +1,6 @@
 # min       hour        day         month       weekday     command
 # (0-59)    (0-23)      (1-31)      (1-12)      (0-6)
-*   	    *   	    *   	    *   	    *   	    npm run start --prefix /usr/src/app/
+40   	    11   	    *   	    *   	    *   	    npm run start --prefix /usr/src/app/
 
 
 # month = jan,feb,mar,apr,may,jun,jul...
