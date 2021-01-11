@@ -1,26 +1,13 @@
-const readSpreadSheet = require('./readSpreadSheet.js');
-const teste = require('./generateJson.js');
+const getNews = require('./getNews.js');
 const fs = require('fs');
+const path = require('path');
 
-teste.then(data => {
+getNews.then(data => {
     data = JSON.stringify(data);
-    fs.writeFile('feed.json', data, (err) => {
+    fs.writeFile(path.join(__dirname, '..', 'feed.json'), data, (err) => {
         if (err) {
             throw err;
         }
         console.log("JSON data is saved.");
     });
 })
-
-
-/*  async function handle(handlerInput) {
-    const speakOutput = await readSpreadSheet.then((value) => {
-        return value;
-    });
-
-    return speakOutput;
-}
-
-handle().then((value) => {
-    console.log(value);
-})  */

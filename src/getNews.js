@@ -4,7 +4,7 @@ const creds = require('./client_secret.json');
 const uuid = require('uuid-random');
 
 
-async function readSpreadSheet() {
+async function getNews() {
     const doc = new GoogleSpreadsheet('1Q21v72WDgpdSaF3qu5SjUulHSBIKTzds0lOrI3xsPTM')
 
     await doc.useServiceAccountAuth(creds);
@@ -39,7 +39,7 @@ function cleanText(email) {
 }
 
 function buildJson(news) {
-    return news.map(newsItem => {
+    return news.filter((newsItem) => newsItem != null).map(newsItem => {
         if (newsItem[1] != '') {
             return {
                 "uid": uuid(),
@@ -52,4 +52,4 @@ function buildJson(news) {
     });
 }
 
-module.exports = readSpreadSheet();
+module.exports = getNews();
