@@ -2,3 +2,5 @@ src/client_secret.json
 src/client_secret2.json
 /node_modules
 yarn.lock
+
+.env

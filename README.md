@@ -6,7 +6,7 @@
 
 Skill de conversação da Alexa para consumir a newsletter desenvolvida pelo [Filipe Deschamps](https://github.com/filipedeschamps).  
 
-Está Skill consome os dados de um google sheets que extrai diretamente as informações do e-mail que recebo às 11h30 da equipe do Deschamps. É gerado um arquivo JSON que será lido pela Alexa e apresentara o Flash Briefing (Resumo de notícias) para o usuário.
+Está Skill consome os dados de um google sheets que extrai diretamente as informações do e-mail que recebo às 11h30 da equipe do Deschamps. É gerado um arquivo JSON que será enviado para o S3 da Amazon e pós isso lido pela Alexa para ser apresentado no Flash Briefing (Resumo de notícias) do usuário.
 
 <p align="center">
     <img src="https://raw.githubusercontent.com/jjeanjacques10/alexa-newsletter/main/screenshots/newsletter_sheets.jpg" width="750">
@@ -25,11 +25,13 @@ Este projeto foi desenvolvido utilizando:
 - [Zappier](https://zapier.com/)
 - [Google Sheets](https://theoephraim.github.io/node-google-spreadsheet)
 - [Docker](https://www.docker.com/)
-- [AWS](https://aws.amazon.com/ec2/)
+- [AWS S3](https://aws.amazon.com/s3/)
 
 ## Rodar o projeto
 
-Adicione suas credenciais no arquivo: `client_secret_example.json`
+Adicione suas credenciais no arquivo: `client_secret_example.json`, você pode encontrar estes dados no console do [Google Cloud Platform](console.developers.google.com).
+
+Atualizei o arquivo `.env` com as suas credenciais do Amazon SDK.
 
 Há dois modos de rodar o script para ler as notícias e gerar um JSON que será lido pela Alexa:
 
