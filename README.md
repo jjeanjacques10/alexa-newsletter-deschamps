@@ -8,9 +8,13 @@ Skill de conversação da Alexa para consumir a newsletter desenvolvida pelo [Fi
 
 Está Skill consome os dados de um google sheets que extrai diretamente as informações do e-mail que recebo às 11h30 da equipe do Deschamps. É gerado um arquivo JSON que será enviado para o S3 da Amazon e pós isso lido pela Alexa para ser apresentado no Flash Briefing (Resumo de notícias) do usuário.
 
+
 <p align="center">
     <img src="https://raw.githubusercontent.com/jjeanjacques10/alexa-newsletter/main/screenshots/newsletter_sheets.jpg" width="750">
 </p>
+
+---
+A Skill de Flash Briefing tem o limite, ela apenas lê as 5 primeiras notícias salvas no arquivo JSON, caso queira ler mais, você pode encontrar o código na pasta `custom skill newsletter` (É a versão que está online no link abaixo).
 
 ## Ativar Skill
 
