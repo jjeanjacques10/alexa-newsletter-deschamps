@@ -39,11 +39,13 @@ function cleanText(email) {
 }
 
 function buildJson(news) {
-    return news.map(newsItem => {
+    return news.map((newsItem, index) => {
+        var date = new Date();
+
         if (newsItem[1] != '') {
             return {
                 "uid": uuid(),
-                "updateDate": new Date().toISOString(),
+                "updateDate": new Date(date.getTime() - (1000 * index)).toISOString(),
                 "titleText": newsItem[0],
                 "mainText": newsItem[1],
                 "redirectionUrl": 'https://filipedeschamps.com.br/newsletter'

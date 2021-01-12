@@ -1,0 +1,38 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "notícias do mundo de tecnologia",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "NewsLetterIntent",
+          "slots": [],
+          "samples": [
+            "Ler as melhores notícias de tecnologia",
+            "Ler newsletter",
+            "Ler newsletter do Deschamps",
+            "Ler newsletter do Felipe",
+            "Ler notícias"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        }
+      ],
+      "types": []
+    }
+  },
+  "version": "7"
+}
