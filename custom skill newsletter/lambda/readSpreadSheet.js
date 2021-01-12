@@ -22,6 +22,8 @@ function cleanText(email) {
 
     var news = $('p').text();
 
+    news = news.replace('&', ' ');
+
     // Add space after "."
     news = news.replace(/\.(?!\d)/g, '. ');
 
