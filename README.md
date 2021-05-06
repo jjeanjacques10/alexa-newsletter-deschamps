@@ -2,6 +2,13 @@
 
 <p align="center">
     <img src="./screenshots/appAlexa.png">
+    <br />
+    <br />
+    <a href="https://www.amazon.com.br/Jean-Jacques-Barros-Newsletter-Deschamps/dp/B08RG61BPD">Ver Demo</a>
+    ·
+    <a href="https://github.com/jjeanjacques10/alexa-newsletter-deschamps/issues">Reportar Bug</a>
+    ·
+    <a href="https://github.com/jjeanjacques10/alexa-newsletter-deschamps/issues">Solicitar Feature</a>
 </p>
 
 ## Sobre o projeto
@@ -11,7 +18,7 @@ Skill de conversação para Alexa com objetivo de consumir a newsletter do [Fili
 Está Skill consome os dados de um google sheet, onde armazenos as notícias de tecnologias que são enviadas na newsletter por e-mail. Neste repositório temos dois códigos, o primeiro é uma Custom Skill e o segundo é um Flash Briefing. Explico com mais detalhes a frente.
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/jjeanjacques10/alexa-newsletter/main/screenshots/newsletter_sheets.jpg" width="750">
+    <img src="./screenshots/newsletter_sheets.jpg" width="750">
 </p>
 
 ## Tecnologias
