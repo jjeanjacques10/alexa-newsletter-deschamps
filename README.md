@@ -129,6 +129,10 @@ Você pode testar acessando:
 - [Custom Skill](https://www.amazon.com.br/Jean-Jacques-Barros-Newsletter-Deschamps/dp/B08RG61BPD)
 - [Flash Briefing](https://www.amazon.com.br/Newsletter-Filipe-Deschamps-Flash-Briefing/dp/B08SQTLJSK)
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=jjeanjacques10/alexa-newsletter-deschamps&type=Date)](https://star-history.com/#jjeanjacques10/alexa-newsletter-deschamps&Date)
+
 ## Licença
 
 Distribuído sob a licença MIT. Veja [`LICENSE`](./LICENSE) para mais informações.
